@@ -1,0 +1,40 @@
+//CHARTE GRAPHIQUE
+$white: #ffffff;
+$primary: #4597bf;
+$purple: #ada7ff;
+$title: #130f49;
+$text: #706f7d;
+
+$xs: 0.75rem;
+$sm: 0.875rem;
+$base: 1rem;
+$lg: 1.125rem;
+$xl: 1.25rem;
+$xl2: 1.5rem;
+$xl3: 1.875rem;
+$xl4: 2.25rem;
+$xl5: 3rem;
+$xl6: 4rem;
+
+// BOX SHADOW
+$boxShadowHr: 1px 1px 3px 0 rgba(0, 0, 0, 5%);
+$boxShadowCard: 1px 1px 7px 1px hsla(0deg, 0%, 87%, 50%);
+$boxShadowProject: 10px 0 30px 0 rgba(206, 212, 224, 26%);
+$boxShadowContact: 1px 1px 20px -18px rgba(79, 79, 79, 70%);
+$boxShadowContactCard: 1px 1px 3px 0 hsla(0deg, 0%, 68%, 26%);
+
+// FONT
+@font-face {
+    font-family: 'Space Grotesk Bold';
+    src: url('../../../public/assets/font/SpaceGrotesk-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Karla Regular';
+    src: url('../../../public/assets/font/Karla-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Karla Medium';
+    src: url('../../../public/assets/font/Karla-Medium.ttf');
+}

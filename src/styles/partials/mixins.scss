@@ -1,0 +1,51 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin fullCenter {
+    @include flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin center {
+    @include flex;
+    justify-content: center;
+}
+
+@mixin spaceBetween {
+    @include flex;
+    justify-content: space-between;
+}
+
+@mixin spaceAround {
+    @include flex;
+    justify-content: space-around;
+}
+
+@mixin flexStart {
+    @include flex;
+    justify-content: flex-start;
+}
+
+@mixin defaultLogo {
+    .cls-1 {
+        fill: $primary;
+    }
+
+    .cls-2,
+    .cls-3 {
+        fill: none;
+        stroke: $primary;
+        stroke-miterlimit: 10;
+    }
+
+    .cls-2 {
+        stroke-width: 4px;
+    }
+
+    .cls-3 {
+        stroke-width: 2px;
+    }
+}
