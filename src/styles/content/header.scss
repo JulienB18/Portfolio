@@ -1,44 +1,133 @@
-header {
+.header-container {
+    padding: 16px;
     width: 100%;
-    @include spaceBetween;
+    transition: background-color 200ms linear;
 
-    .logo-container {
-        width: 40%;
-        .logo {
-            width: 75px;
-            @include defaultLogo;
-        }
-    }
-
-    .nav-container {
-        width: 60%;
+    header {
+        width: 100%;
         @include spaceBetween;
-        nav {
-            color: $primary;
-            text-transform: uppercase;
-            font-family: 'Karla Medium', sans-serif;
-            font-size: $sm;
-            margin-right: 15%;
-            width: 100%;
-            ul {
-                width: 100%;
-                @include center;
-                li {
-                    margin: auto;
-                    padding: 4px;
-                    cursor: pointer;
+        .logo-container {
+            z-index: 1;
+            width: 30%;
+            .logo {
+                width: 56px;
+                @include defaultLogo;
+            }
+        }
+
+        .nav-container {
+            display: none;
+        }
+
+        .nav-burger {
+            z-index: 1;
+            width: 70%;
+            @include flexEnd;
+            &-container {
+                border-radius: 16px;
+                padding: 16px;
+                border: 1px solid $primary;
+                &-icon {
+                    span {
+                        display: block;
+                        width: 20px;
+                        height: 2px;
+                        margin: 4px 0;
+                    }
+                }
+                &-close {
+                    background-color: $white;
+                    span {
+                        background-color: $primary;
+                    }
+                }
+                &-open {
+                    background-color: $primary;
+                    span {
+                        background-color: $white;
+                    }
                 }
             }
         }
-        &-logo {
-            @include spaceBetween;
-            div {
-                cursor: pointer;
-                padding: 4px;
+
+        .header-purple {
+            z-index: 0;
+            position: absolute;
+            top: -150px;
+            right: -175px;
+            width: 450px;
+            height: 450px;
+            background: #f4f3ff;
+            border-radius: 50%;
+            transition: background-color 200ms linear;
+
+            &-none {
+                background: $primaryVariant;
             }
-            :last-child {
-                margin-left: 24px;
+        }
+
+        @screen lg {
+            .nav-container {
+                @include spaceBetween;
+                z-index: 1;
+                width: 70%;
+                nav {
+                    color: $primary;
+                    text-transform: uppercase;
+                    font-family: 'Karla Medium', sans-serif;
+                    font-size: $sm;
+                    margin-right: 10%;
+                    width: 100%;
+                    ul {
+                        width: 100%;
+                        @include center;
+                        li {
+                            margin: auto;
+                            padding: 4px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                &-logo {
+                    @include spaceBetween;
+                    div {
+                        cursor: pointer;
+                        padding: 4px;
+                    }
+                    :last-child {
+                        margin-left: 16px;
+                    }
+                }
+            }
+            .nav-burger {
+                display: none;
+            }
+        }
+        /*
+      @screen 2xl {
+          .nav-container {
+              nav {
+                  margin-right: 15%;
+              }
+          }
+      }*/
+    }
+
+    @screen sm {
+        header {
+            .logo-container {
+                .logo {
+                    width: 75px;
+                }
             }
         }
     }
+
+    @screen md {
+        padding: 32px 64px;
+    }
+}
+
+.header-mobile-opened {
+    background: $primaryVariant;
 }

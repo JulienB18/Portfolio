@@ -2,10 +2,12 @@ import { ActionType } from 'type';
 
 export type GlobalState = {
     clicks: number;
+    mobileMenu: boolean;
 };
 
 const initialState: GlobalState = {
     clicks: 1,
+    mobileMenu: false,
 };
 
 const globalReducer = (
@@ -25,6 +27,9 @@ const globalReducer = (
         return { ...state, clicks: action.payload };
     }
 
+    if (action.type === 'SetMobileMenu') {
+        return { ...state, mobileMenu: !state.mobileMenu };
+    }
     return state;
 };
 

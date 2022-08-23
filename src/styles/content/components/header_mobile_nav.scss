@@ -1,0 +1,41 @@
+.header-mobile-nav {
+    position: absolute;
+    top: 88px;
+    z-index: 1;
+    background: $primaryVariant;
+    width: 100%;
+    overflow: hidden;
+    transition: 200ms ease-in-out;
+
+    &-close {
+        height: 0;
+    }
+
+    &-open {
+        height: 256px;
+    }
+
+    ul {
+        li {
+            padding: 20px 16px;
+        }
+    }
+
+    @screen sm {
+        top: 107px;
+        ul {
+            li {
+                padding: 20px 32px;
+            }
+        }
+    }
+
+    @screen md {
+        top: 139px;
+        ul {
+            li {
+                padding: 20px 64px;
+            }
+        }
+    }
+}

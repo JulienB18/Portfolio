@@ -29,6 +29,11 @@
     justify-content: flex-start;
 }
 
+@mixin flexEnd {
+    @include flex;
+    justify-content: flex-end;
+}
+
 @mixin defaultLogo {
     .cls-1 {
         fill: $primary;

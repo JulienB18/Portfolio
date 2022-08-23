@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import HeaderMobileNav from 'components/section/components/HeaderMobileNav';
 import Header from 'components/section/Header';
 import CustomHead from 'layout/Head';
 import { AppConfig } from 'utils/AppConfig';
@@ -14,6 +15,7 @@ const App = () => {
             <main>
                 <Header />
             </main>
+            <HeaderMobileNav />
         </div>
     );
 };
