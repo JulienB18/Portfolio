@@ -17,6 +17,8 @@
 
     ul {
         li {
+            cursor: pointer;
+            color: $title;
             padding: 20px 16px;
         }
     }
@@ -32,10 +34,5 @@
 
     @screen md {
         top: 139px;
-        ul {
-            li {
-                padding: 20px 64px;
-            }
-        }
     }
 }

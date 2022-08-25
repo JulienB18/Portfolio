@@ -1,7 +1,8 @@
 import * as React from 'react';
 
-import HeaderMobileNav from 'components/section/components/HeaderMobileNav';
 import Header from 'components/section/Header';
+import HeaderMobileNav from 'components/section/Header/HeaderMobileNav';
+import Home from 'components/section/Home';
 import CustomHead from 'layout/Head';
 import { AppConfig } from 'utils/AppConfig';
 
@@ -14,6 +15,7 @@ const App = () => {
             <CustomHead title={AppConfig.title} description={AppConfig.description} />
             <main>
                 <Header />
+                <Home />
             </main>
             <HeaderMobileNav />
         </div>

@@ -1,0 +1,179 @@
+.home {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 0 16px;
+    &-title {
+        z-index: 2;
+        h1 {
+            font-family: 'Space Grotesk Bold', sans-serif;
+            color: $title;
+            font-size: $xl5;
+            span {
+                color: $primary;
+            }
+        }
+
+        &-description {
+            font-family: 'Karla Regular', sans-serif;
+            text-align: justify;
+            font-size: $lg;
+            line-height: 180%;
+            color: $text;
+            &:last-of-type {
+                margin-top: 32px;
+            }
+        }
+
+        &-buttons {
+            margin-top: 48px;
+            &-cv {
+                width: 100%;
+                @include center;
+            }
+            &-scroll {
+                width: 100%;
+                font-family: 'Karla Regular', sans-serif;
+                font-size: $lg;
+                color: #aaaaaa;
+                margin-top: 48px;
+                @include center;
+                p {
+                    margin-left: 16px;
+                }
+            }
+        }
+    }
+
+    &-presentation {
+        z-index: 1;
+        position: relative;
+        margin-top: 48px;
+        width: 100%;
+        @include center;
+        &-container {
+            @include center;
+            width: 100%;
+            background: #cce9f5;
+            overflow: hidden;
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            img {
+                height: 100%;
+                width: 80%;
+                padding-top: 18%;
+            }
+        }
+        &-dotgrid {
+            display: none;
+            position: absolute;
+            &_top {
+                top: 0;
+                left: 10%;
+            }
+
+            &_bot {
+                bottom: 0;
+                right: 10%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        &-title {
+            h1 {
+                font-size: $xl4;
+            }
+        }
+    }
+
+    @media screen and (min-width: 450px) {
+        &-presentation {
+            &-container {
+                width: 80%;
+            }
+            &-dotgrid {
+                display: block;
+            }
+        }
+    }
+
+    @screen sm {
+        &-title {
+            &-buttons {
+                @include spaceBetween;
+                width: 100%;
+                &-cv {
+                    width: unset;
+                }
+                &-scroll {
+                    margin-top: 0;
+                    width: unset;
+                }
+            }
+        }
+
+        &-presentation {
+            &-container {
+                width: 70%;
+            }
+        }
+    }
+
+    @screen md {
+        padding: 0 32px;
+    }
+
+    @screen lg {
+        @include spaceBetween;
+        &-title {
+            width: 60%;
+            h1 {
+                width: 500px;
+                font-size: $xl5;
+            }
+            &-description {
+                width: 80%;
+            }
+            &-buttons {
+                width: 80%;
+            }
+        }
+
+        &-presentation {
+            margin-top: 0;
+            width: 50%;
+            &-container {
+                width: 100%;
+            }
+            &-dotgrid {
+                &_top {
+                    left: 0;
+                }
+
+                &_bot {
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    @screen xl {
+        padding: 0 64px;
+        align-items: unset;
+        &-title {
+            h1 {
+                width: 660px;
+                font-size: $xl6;
+            }
+        }
+        &-presentation {
+            &-container {
+                img {
+                    padding-top: 95px;
+                }
+            }
+        }
+    }
+}
