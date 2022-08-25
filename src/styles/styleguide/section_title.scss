@@ -1,0 +1,17 @@
+.Portfolio-section-title {
+    font-family: 'Space Grotesk Bold', sans-serif;
+    color: $title;
+    font-size: $xl5;
+
+    @media screen and (max-width: 400px) {
+        font-size: $xl4;
+    }
+
+    @screen lg {
+        font-size: $xl5;
+    }
+
+    @screen xl {
+        font-size: $xl6;
+    }
+}

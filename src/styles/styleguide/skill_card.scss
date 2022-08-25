@@ -1,0 +1,74 @@
+.Portfolio-skillcard {
+    border-radius: 10px;
+    border: rgba($color: #c0c0c0, $alpha: 0.51) 1px solid;
+    color: $white;
+    background: $white;
+    padding: 24px;
+    max-width: 550px;
+    width: 100%;
+    box-shadow: $boxShadowCard;
+
+    &-title {
+        @include fullCenter;
+        margin-bottom: 20px;
+        &-icon {
+            width: 60px;
+            height: 60px;
+            @include fullCenter;
+            position: relative;
+            &-bg {
+                position: absolute;
+                border-radius: 20px;
+                width: 60px;
+                height: 60px;
+            }
+            img {
+                width: 32px;
+            }
+        }
+        h4 {
+            padding: 16px 0 0 0;
+            font-size: 26px;
+            font-family: 'Space Grotesk Bold', sans-serif;
+            color: $title;
+        }
+    }
+
+    &-list {
+        padding: 0 0 4px 8px;
+        color: $text;
+        font-size: $lg;
+        font-family: 'Space Grotesk Regular', sans-serif;
+        &-li {
+            @include flexStart;
+            padding: 4px 0;
+            div {
+                border-radius: 50%;
+                height: 8px;
+                width: 8px;
+                margin-right: 8px;
+                background: $text;
+            }
+        }
+    }
+
+    @media screen and (min-width: 450px) {
+        &-title {
+            @include flexStart;
+            flex-direction: row;
+            margin-bottom: 28px;
+            h4 {
+                padding: 0 0 0 16px;
+            }
+        }
+        &-list {
+            padding: 0 0 4px 16px;
+        }
+    }
+
+    @screen lg {
+        &-list {
+            padding: 0 0 4px 48px;
+        }
+    }
+}

@@ -11,10 +11,10 @@ const onCvClick = () => {};
 const Home = () => {
     const router = useRouter();
     return (
-        <div className="home">
+        <section className="home">
             <div className="home-title">
                 <h1>
-                    👋 Bonjour, moi c’est <span>Julien</span>, développeur web et mobile
+                    👋Bonjour, je suis <span>Julien</span>, développeur web et mobile
                 </h1>
                 <p className="home-title-description">
                     originaire de Bourges. Spécialisé en intégration web et développement Front-end, je suis passionné
@@ -45,7 +45,7 @@ const Home = () => {
                     <DotGrid />
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

@@ -3,9 +3,11 @@
     z-index: 1;
     width: 100%;
     padding: 0 16px;
+    margin-bottom: 96px;
     &-title {
         z-index: 2;
         h1 {
+            line-height: 1.2;
             font-family: 'Space Grotesk Bold', sans-serif;
             color: $title;
             font-size: $xl5;

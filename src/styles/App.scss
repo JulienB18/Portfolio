@@ -17,19 +17,25 @@ body {
 
     main {
         width: 100%;
+        .classic-max-width {
+            width: 100%;
+        }
     }
 
     @screen lg {
-        @include center;
-        align-items: stretch;
         main {
-            max-width: 97%;
+            @include fullCenter;
+            .classic-max-width {
+                max-width: 97%;
+            }
         }
     }
 
     @screen xl {
         main {
-            max-width: 1300px;
+            .classic-max-width {
+                max-width: 1300px;
+            }
         }
     }
 }

@@ -1,0 +1,41 @@
+.skills {
+    width: 100%;
+    padding: 0 16px;
+    margin: 96px 0;
+
+    &-title {
+        @include center;
+        text-align: center;
+        padding: 0 16px;
+        h2 {
+            margin-top: 24px;
+        }
+    }
+
+    &-container {
+        padding-top: 64px;
+        @include fullCenter;
+        &-row {
+            @include fullCenter;
+            width: 100%;
+            gap: 32px;
+            &:last-of-type {
+                margin-top: 32px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 850px) {
+        padding: 0 32px;
+        &-container {
+            &-row {
+                @include spaceBetween;
+                flex-direction: row;
+            }
+        }
+    }
+
+    @screen xl {
+        padding: 0 64px;
+    }
+}
