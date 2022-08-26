@@ -3,6 +3,7 @@ import * as React from 'react';
 import Header from 'components/section/Header';
 import HeaderMobileNav from 'components/section/Header/HeaderMobileNav';
 import Home from 'components/section/Home';
+import Projects from 'components/section/Projects';
 import Skills from 'components/section/Skills';
 import CustomHead from 'layout/Head';
 import { AppConfig } from 'utils/AppConfig';
@@ -23,6 +24,7 @@ const App = () => {
                 <div className="classic-max-width">
                     <Skills />
                 </div>
+                <Projects />
             </main>
             <HeaderMobileNav />
         </div>

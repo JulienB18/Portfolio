@@ -1,0 +1,29 @@
+.projects {
+    width: 100%;
+    &-aside {
+        position: relative;
+        width: 100%;
+        @include flexEnd;
+        &-rectangle {
+            background: #e9f9ff;
+            height: 500px;
+            width: 70%;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+        }
+        &-dot {
+            display: none;
+            position: absolute;
+            right: 20%;
+            top: -43px;
+        }
+    }
+
+    @media screen and (min-width: 450px) {
+        &-aside {
+            &-dot {
+                display: block;
+            }
+        }
+    }
+}
