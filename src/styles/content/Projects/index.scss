@@ -1,7 +1,8 @@
 .projects {
     width: 100%;
+    margin-bottom: 96px;
+    position: relative;
     &-aside {
-        position: relative;
         width: 100%;
         @include flexEnd;
         &-rectangle {
@@ -19,11 +20,76 @@
         }
     }
 
-    @media screen and (min-width: 450px) {
+    &-container {
+        width: 100%;
+        @include center;
+        .classic-max-width {
+            position: absolute;
+            top: 0;
+            padding-top: 96px;
+        }
+    }
+
+    &-content {
+        padding: 0 16px;
+        &-title {
+            text-align: center;
+            h2 {
+                margin-top: 24px;
+            }
+        }
+        &-list {
+            width: 100%;
+            margin-top: 96px;
+            gap: 64px;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            &-empty {
+                max-width: 320px;
+                width: 500px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 736px) {
         &-aside {
             &-dot {
                 display: block;
             }
+        }
+    }
+
+    @screen sm {
+        &-content {
+            &-title {
+                text-align: left;
+            }
+        }
+    }
+
+    @screen md {
+        &-content {
+            padding: 0 32px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        &-content {
+            &-list {
+                justify-content: space-between;
+
+                &-empty {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    @screen xl {
+        &-content {
+            padding: 0 64px;
         }
     }
 }

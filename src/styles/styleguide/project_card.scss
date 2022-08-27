@@ -1,0 +1,50 @@
+.Portfolio-projectcard {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    border-radius: 16px;
+    box-shadow: $boxShadowProject;
+    max-width: 320px;
+    max-height: 340px;
+    height: 500px;
+    width: 500px;
+    @include fullCenter;
+    padding: 48px 24px;
+    cursor: pointer;
+    &-findout {
+        border-radius: 8px;
+        font-family: 'Space Grotesk Bold', sans-serif;
+        text-align: center;
+        font-size: $xl2;
+        color: $title;
+        padding: 24px 32px;
+        background: rgba($color: #cbd0fe, $alpha: 0.8);
+        opacity: 0;
+        transition: opacity 500ms;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        p {
+            font-size: $lg;
+            line-height: 2rem;
+        }
+        button {
+            padding: 10px 16px;
+            background-color: $primary;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            font-family: 'Karla Medium', sans-serif;
+            font-size: $lg;
+        }
+    }
+
+    &:hover {
+        .Portfolio-projectcard-findout {
+            opacity: 1;
+        }
+    }
+}
