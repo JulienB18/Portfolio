@@ -21,43 +21,45 @@ const Header = (props: IMobileMenuProps & IHeaderDispatchProps) => {
     const purpleCircle = props.mobileMenu ? ' header-purple-none' : '';
 
     return (
-        <div className={`header-container${container}`}>
-            <header>
-                <div className="logo-container">
-                    <Logo />
-                </div>
-                <div className="nav-container">
-                    <nav>
-                        <ul>
-                            <li>Compétences</li>
-                            <li>Projets</li>
-                            <li>À propos</li>
-                            <li>Contact</li>
-                        </ul>
-                    </nav>
-                    <div className="nav-container-logo">
-                        <div>
-                            <GithubLogo />
-                        </div>
-                        <div>
-                            <LinkedInLogo />
+        <div className="classic-max-width">
+            <div className={`header-container${container}`}>
+                <header>
+                    <div className="logo-container">
+                        <Logo />
+                    </div>
+                    <div className="nav-container">
+                        <nav>
+                            <ul>
+                                <li>Compétences</li>
+                                <li>Projets</li>
+                                <li>À propos</li>
+                                <li>Contact</li>
+                            </ul>
+                        </nav>
+                        <div className="nav-container-logo">
+                            <div>
+                                <GithubLogo />
+                            </div>
+                            <div>
+                                <LinkedInLogo />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="nav-burger">
-                    <div
-                        className={`nav-burger-container nav-burger-container${isOpen}`}
-                        onClick={() => props.setMobileMenu()}
-                    >
-                        <span className="nav-burger-container-icon">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
+                    <div className="nav-burger">
+                        <div
+                            className={`nav-burger-container nav-burger-container${isOpen}`}
+                            onClick={() => props.setMobileMenu()}
+                        >
+                            <span className="nav-burger-container-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div className={`header-purple ${purpleCircle}`}></div>
-            </header>
+                    <div className={`header-purple ${purpleCircle}`}></div>
+                </header>
+            </div>
         </div>
     );
 };

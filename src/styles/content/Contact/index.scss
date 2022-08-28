@@ -1,0 +1,54 @@
+.contact {
+    margin-top: 64px;
+    width: 100%;
+    background: #f4f3ff;
+    @include fullCenter;
+
+    &-content {
+        padding: 64px 16px;
+    }
+
+    &-container {
+        padding: 24px 16px;
+        width: 100%;
+        border: 1px rgba($color: #c0c0c0, $alpha: 0.72) solid;
+        box-shadow: $boxShadowContact;
+        background: $white;
+        border-radius: 16px;
+        &-title {
+            text-align: center;
+            h2 {
+                margin-top: 24px;
+            }
+        }
+        &-cards {
+            margin-top: 32px;
+            @include fullCenter;
+            gap: 32px;
+            &-elem {
+                width: 260px;
+            }
+        }
+    }
+
+    @screen md {
+        &-content {
+            padding: 64px 32px;
+        }
+    }
+
+    @screen lg {
+        &-container {
+            &-cards {
+                @include spaceBetween;
+                flex-direction: row;
+            }
+        }
+    }
+
+    @screen xl {
+        &-content {
+            padding: 64px 64px;
+        }
+    }
+}

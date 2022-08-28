@@ -6,7 +6,6 @@
         font-size: $lg;
         margin-bottom: 32px;
         width: 100%;
-        min-height: 60px;
     }
 
     &-secondTitle {
@@ -44,9 +43,10 @@
         }
     }
 
-    @media screen and (min-width: 1050px) {
+    @screen lg {
         &-title {
-            min-height: unset;
+            margin-bottom: 0;
+            min-height: 96px;
         }
     }
 }

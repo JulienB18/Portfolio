@@ -1,14 +1,16 @@
 import * as React from 'react';
 
 import HomePresentation from './components/HomePresentation';
-import HomeTitle from './components/HomeTItle';
+import HomeTitle from './components/HomeTitle';
 
 const Home = () => {
     return (
-        <section className="home">
-            <HomeTitle />
-            <HomePresentation />
-        </section>
+        <div className="classic-max-width">
+            <section className="home">
+                <HomeTitle />
+                <HomePresentation />
+            </section>
+        </div>
     );
 };
 

@@ -77,7 +77,7 @@
                     color: $primary;
                     text-transform: uppercase;
                     font-family: 'Karla Medium', sans-serif;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-size: $sm;
                     margin-right: 10%;
                     width: 100%;
@@ -96,9 +96,9 @@
                     div {
                         cursor: pointer;
                         padding: 4px;
-                    }
-                    :last-child {
-                        margin-left: 16px;
+                        &:last-child {
+                            margin-left: 32px;
+                        }
                     }
                 }
             }

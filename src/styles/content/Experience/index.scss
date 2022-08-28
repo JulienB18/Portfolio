@@ -44,21 +44,23 @@
         }
     }
 
-    @screen xl {
-        &-content {
-            padding: 100px 64px;
-        }
-    }
-
-    @media screen and (min-width: 1050px) {
+    @screen lg {
         &-content {
             @include spaceBetween;
             flex-direction: row;
             gap: 32px;
+            width: 100%;
             &-column {
                 max-width: unset;
                 width: unset;
+                width: 50%;
             }
+        }
+    }
+
+    @screen xl {
+        &-content {
+            padding: 100px 64px;
         }
     }
 }
