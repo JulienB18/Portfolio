@@ -1,0 +1,52 @@
+.Portfolio-experiencecard {
+    &-title {
+        font-family: 'Space Grotesk Bold', sans-serif;
+        font-weight: bold;
+        color: $title;
+        font-size: $lg;
+        margin-bottom: 32px;
+        width: 100%;
+        min-height: 60px;
+    }
+
+    &-secondTitle {
+        font-family: 'Space Grotesk Regular', sans-serif;
+        font-weight: 600;
+        font-size: $base;
+
+        color: #34a1cd;
+    }
+
+    &-date {
+        font-family: 'Space Grotesk Regular', sans-serif;
+        font-weight: 600;
+        font-size: $base;
+
+        color: #a6a6a6;
+        margin-bottom: 24px;
+    }
+    hr {
+        color: #000000;
+    }
+
+    @screen sm {
+        &-title {
+            font-size: $xl;
+            width: 70%;
+        }
+
+        &-secondTitle {
+            font-size: $lg;
+        }
+
+        &-date {
+            font-size: $lg;
+        }
+    }
+
+    @media screen and (min-width: 1050px) {
+        &-title {
+            min-height: unset;
+        }
+    }
+}

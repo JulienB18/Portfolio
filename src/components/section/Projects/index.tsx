@@ -6,8 +6,7 @@ import GraySectionTitle from 'components/styleguide/GraySectionTitle';
 import ProjectCard from 'components/styleguide/ProjectCard';
 import SectionTitle from 'components/styleguide/SectionTitle';
 import DotGrid from 'components/styleguide/svg/DotGrid';
-
-import { projectList, ProjectType } from './projets';
+import { projectList, ProjectType } from 'data/Projects';
 
 const Projects = () => {
     const router = useRouter();

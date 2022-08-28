@@ -1,0 +1,127 @@
+.presentation {
+    width: 100%;
+    margin-bottom: 96px;
+    position: relative;
+    &-aside {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        @include flexStart;
+        &-rectangle {
+            background: #f4f3ff;
+            width: 100%;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+        }
+        &-dot {
+            display: none;
+            position: absolute;
+            right: 25%;
+            top: 65px;
+        }
+    }
+
+    &-container {
+        width: 100%;
+        z-index: 10;
+        position: relative;
+        @include center;
+    }
+
+    &-content {
+        margin-top: 96px;
+        padding: 0 16px;
+        &-title {
+            text-align: center;
+            h2 {
+                margin-top: 24px;
+            }
+        }
+        &-description {
+            margin-top: 48px;
+            font-family: 'Karla Regular', sans-serif;
+            font-size: $lg;
+            line-height: 180%;
+            text-align: justify;
+            color: $text;
+
+            p:last-child {
+                margin-top: 24px;
+            }
+        }
+        &-images {
+            margin-top: 48px;
+            @include spaceAround;
+            gap: 24px;
+            flex-wrap: wrap;
+            .Portfolio-imagecard:nth-child(1) {
+                display: block;
+            }
+        }
+    }
+
+    @screen sm {
+        &-aside {
+            &-rectangle {
+                width: 58%;
+            }
+            &-dot {
+                display: block;
+            }
+        }
+
+        &-content {
+            &-title {
+                text-align: left;
+            }
+        }
+    }
+
+    @screen md {
+        &-content {
+            padding: 0 32px;
+        }
+    }
+
+    @media screen and (min-width: 937px) {
+        &-content {
+            &-images {
+                @include spaceBetween;
+
+                .Portfolio-imagecard:nth-child(1) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @screen lg {
+        &-content {
+            &-description {
+                @include spaceBetween;
+                align-items: flex-start;
+                gap: 64px;
+                p:last-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1300px) {
+        &-content {
+            &-images {
+                .Portfolio-imagecard:nth-child(1) {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    @screen xl {
+        &-content {
+            padding: 0 64px;
+        }
+    }
+}

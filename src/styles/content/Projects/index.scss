@@ -4,6 +4,9 @@
     position: relative;
     &-aside {
         width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 1;
         @include flexEnd;
         &-rectangle {
             background: #e9f9ff;
@@ -22,15 +25,13 @@
 
     &-container {
         width: 100%;
+        z-index: 10;
+        position: relative;
         @include center;
-        .classic-max-width {
-            position: absolute;
-            top: 0;
-            padding-top: 96px;
-        }
     }
 
     &-content {
+        margin-top: 96px;
         padding: 0 16px;
         &-title {
             text-align: center;
@@ -53,15 +54,13 @@
         }
     }
 
-    @media screen and (min-width: 736px) {
+    @screen sm {
         &-aside {
             &-dot {
                 display: block;
             }
         }
-    }
 
-    @screen sm {
         &-content {
             &-title {
                 text-align: left;

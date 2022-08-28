@@ -1,8 +1,10 @@
 import * as React from 'react';
 
+import Experience from 'components/section/Experience';
 import Header from 'components/section/Header';
 import HeaderMobileNav from 'components/section/Header/HeaderMobileNav';
 import Home from 'components/section/Home';
+import Presentation from 'components/section/Presentation';
 import Projects from 'components/section/Projects';
 import Skills from 'components/section/Skills';
 import CustomHead from 'layout/Head';
@@ -21,12 +23,13 @@ const App = () => {
                     <Home />
                 </div>
                 <hr className="Portfolio-hr" />
-                <div className="classic-max-width">
-                    <Skills />
-                </div>
+                <Skills />
                 <Projects />
+                <Presentation />
+                <Experience />
             </main>
             <HeaderMobileNav />
+            <div style={{ height: '5000px' }}></div>
         </div>
     );
 };

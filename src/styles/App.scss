@@ -6,9 +6,15 @@ html,
 body {
     width: 100%;
     max-width: 100vw;
-    overflow-x: hidden;
     position: relative;
-    height: 5000px;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow: hidden;
 }
 
 .Portfolio {
