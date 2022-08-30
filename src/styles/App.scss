@@ -73,6 +73,73 @@ body {
     }
 }
 
+.consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f4f3ff;
+    color: $text;
+    z-index: 1000;
+    padding: 16px;
+    font-family: 'Karla Regular', sans-serif;
+    &-container {
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+        &-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            svg {
+                display: none;
+                margin-right: 32px;
+            }
+            p {
+                line-height: 1;
+            }
+            &-title {
+                font-weight: bold;
+            }
+        }
+        &-buttons {
+            color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            button {
+                padding: 4px 12px;
+                border-radius: 8px;
+            }
+            &-deny {
+                background-color: #e72929;
+            }
+            &-accept {
+                background-color: #047a5b;
+            }
+        }
+    }
+
+    @media screen and (min-width: $breakpoint_md) {
+        &-container {
+            flex-direction: row;
+            gap: 32px;
+            &-text {
+                text-align: left;
+                svg {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
 .error-page {
     font-family: -apple-system, BlinkMacSystemFont, Roboto, Segoe UI, Fira Sans, Avenir, Helvetica Neue, Lucida Grande,
         sans-serif;

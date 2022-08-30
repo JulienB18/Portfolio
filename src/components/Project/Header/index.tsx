@@ -12,7 +12,7 @@ const Header = (props: IHeaderProps) => {
     return (
         <div ref={props.forwaredRef} className="classic-max-width">
             <div className="project-header">
-                <header>
+                <header data-aos="fade-down">
                     <div className="logo-container">
                         <Logo />
                     </div>

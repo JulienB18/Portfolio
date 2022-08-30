@@ -71,7 +71,7 @@
         }
     }
 
-    @media screen and (min-width: $breakpoint_lg) {
+    @media screen and (min-width: 1024px) {
         &-content {
             &-explanation {
                 &-graytitle {
@@ -84,7 +84,7 @@
         }
     }
 
-    @media screen and (min-width: $breakpoint_xl) {
+    @media screen and (min-width: 1280px) {
         &-content {
             padding: 96px 64px;
         }

@@ -16,7 +16,7 @@ const Project = (props: ProjectDetailsProps) => {
         <section className="project-item">
             <div className="classic-max-width">
                 <div className="project-item-content">
-                    <div className="project-item-content-links">
+                    <div className="project-item-content-links" data-aos="fade-right">
                         <GraySectionTitle title="Liens" />
                         <ul>
                             {props.projectDetails.linkArray?.map((x: ProjectLinkType) => {
@@ -30,7 +30,7 @@ const Project = (props: ProjectDetailsProps) => {
                             })}
                         </ul>
                     </div>
-                    <div className="project-item-content-explanation">
+                    <div className="project-item-content-explanation" data-aos="fade-left">
                         <div className="project-item-content-explanation-graytitle">
                             <GraySectionTitle title="Présentation du projet" />
                         </div>

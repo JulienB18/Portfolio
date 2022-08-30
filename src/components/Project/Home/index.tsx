@@ -16,7 +16,7 @@ const Home = (props: ProjectHomeProps) => {
     return (
         <div className="classic-max-width">
             <section className="project-home">
-                <div className="project-home-content">
+                <div className="project-home-content" data-aos="fade-right">
                     <div className="project-home-content-graytitle">
                         <GraySectionTitle title="Projet" />
                     </div>
@@ -25,7 +25,7 @@ const Home = (props: ProjectHomeProps) => {
                     </div>
                     <p className="project-home-content-description">{props.projectDetails.mainDescription}</p>
                 </div>
-                <div className="project-home-image">
+                <div className="project-home-image" data-aos="fade-left">
                     <img
                         src={router.basePath + props.projectDetails.mainImgPath}
                         alt={props.projectDetails.mainTitle}

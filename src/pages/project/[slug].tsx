@@ -1,5 +1,6 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
+import AOS from 'aos';
 import { useRouter } from 'next/router';
 
 import ErrorPage from 'components/ErrorPage';
@@ -12,6 +13,14 @@ import { projectsDetailsList } from 'data/ProjectDetails';
 import CustomHead from 'layout/Head';
 
 const ProjectPage = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 750,
+            once: true,
+            delay: 50,
+        });
+    }, []);
+
     const headerRef = useRef(null);
 
     const router = useRouter();
