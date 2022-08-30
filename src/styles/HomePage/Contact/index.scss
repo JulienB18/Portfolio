@@ -31,13 +31,13 @@
         }
     }
 
-    @screen md {
+    @media screen and (min-width: 768px) {
         &-content {
             padding: 64px 32px;
         }
     }
 
-    @screen lg {
+    @media screen and (min-width: 1024px) {
         &-container {
             &-cards {
                 @include spaceBetween;
@@ -46,7 +46,7 @@
         }
     }
 
-    @screen xl {
+    @media screen and (min-width: 1280px) {
         &-content {
             padding: 64px 64px;
         }

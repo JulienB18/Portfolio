@@ -55,7 +55,7 @@ body {
         }
     }
 
-    @screen lg {
+    @media screen and (min-width: 1024px) {
         main {
             @include fullCenter;
             .classic-max-width {
@@ -64,7 +64,7 @@ body {
         }
     }
 
-    @screen xl {
+    @media screen and (min-width: 1280px) {
         main {
             .classic-max-width {
                 max-width: 1300px;

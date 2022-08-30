@@ -66,7 +66,7 @@
         }
     }
 
-    @screen lg {
+    @media screen and (min-width: 1024px) {
         &-list {
             padding: 0 0 4px 48px;
         }

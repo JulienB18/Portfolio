@@ -23,7 +23,7 @@
         }
     }
 
-    @screen sm {
+    @media screen and (min-width: 640px) {
         top: 107px;
         ul {
             li {
@@ -32,7 +32,7 @@
         }
     }
 
-    @screen md {
+    @media screen and (min-width: 768px) {
         top: 139px;
     }
 }

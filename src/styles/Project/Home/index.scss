@@ -30,11 +30,11 @@
         }
     }
 
-    @screen md {
+    @media screen and (min-width: 768px) {
         padding: 0 32px 96px 32px;
     }
 
-    @screen lg {
+    @media screen and (min-width: 1024px) {
         @include spaceBetween;
         margin-top: unset;
         flex-direction: row;
@@ -49,7 +49,7 @@
         }
     }
 
-    @screen xl {
+    @media screen and (min-width: 1280px) {
         padding: 0 64px 96px 64px;
     }
 }

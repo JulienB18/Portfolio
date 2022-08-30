@@ -55,7 +55,7 @@
         }
     }
 
-    @screen md {
+    @media screen and (min-width: 768px) {
         &-content {
             padding: 96px 32px;
             @include flexStart;
@@ -71,7 +71,7 @@
         }
     }
 
-    @screen lg {
+    @media screen and (min-width: 1024px) {
         &-content {
             &-explanation {
                 &-graytitle {
@@ -84,7 +84,7 @@
         }
     }
 
-    @screen xl {
+    @media screen and (min-width: 1280px) {
         &-content {
             padding: 96px 64px;
         }

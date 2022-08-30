@@ -101,7 +101,7 @@
         }
     }
 
-    @screen sm {
+    @media screen and (min-width: 640px) {
         &-title {
             &-buttons {
                 @include spaceBetween;
@@ -123,11 +123,11 @@
         }
     }
 
-    @screen md {
+    @media screen and (min-width: 768px) {
         padding: 0 32px;
     }
 
-    @screen lg {
+    @media screen and (min-width: 1024px) {
         @include spaceBetween;
         &-title {
             width: 60%;
@@ -161,7 +161,7 @@
         }
     }
 
-    @screen xl {
+    @media screen and (min-width: 1280px) {
         padding: 0 64px;
         align-items: unset;
         &-title {

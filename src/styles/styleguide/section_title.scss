@@ -7,11 +7,11 @@
         font-size: $xl4;
     }
 
-    @screen lg {
+    @media screen and (min-width: 1024px) {
         font-size: $xl5;
     }
 
-    @screen xl {
+    @media screen and (min-width: 1280px) {
         font-size: $xl6;
     }
 }

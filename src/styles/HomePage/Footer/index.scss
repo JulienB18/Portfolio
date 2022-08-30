@@ -20,7 +20,7 @@
         }
     }
 
-    @screen sm {
+    @media screen and (min-width: 640px) {
         &-content {
             .logo {
                 width: 75px;
@@ -28,13 +28,13 @@
         }
     }
 
-    @screen md {
+    @media screen and (min-width: 768px) {
         &-content {
             padding: 32px;
         }
     }
 
-    @screen xl {
+    @media screen and (min-width: 1280px) {
         &-content {
             padding: 32px 64px;
         }
