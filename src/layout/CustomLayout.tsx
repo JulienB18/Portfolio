@@ -1,6 +1,6 @@
 import Consent from 'components/Consent';
 
-export default function Layout({ children }: any) {
+export default function CustomLayout({ children }: any) {
     return (
         <>
             <main>{children}</main>

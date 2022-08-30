@@ -9,6 +9,7 @@ import Header from 'components/Project/Header';
 import Home from 'components/Project/Home';
 import Project from 'components/Project/Project';
 import BackToHeader from 'components/StyleGuide/BackToHeader';
+import { HomePageConfig } from 'data/AppConfig';
 import { projectsDetailsList } from 'data/ProjectDetails';
 import CustomHead from 'layout/Head';
 
@@ -33,7 +34,11 @@ const ProjectPage = () => {
     }
     return (
         <div className="Portfolio">
-            <CustomHead title={`Julien Boutet - ${result.mainTitle}`} description={result.mainDescription} />
+            <CustomHead
+                title={`Julien Boutet - ${result.mainTitle}`}
+                description={HomePageConfig.description}
+                noIndex={true}
+            />
             <main className="project">
                 <Header forwaredRef={headerRef} />
                 <Home projectDetails={result} />

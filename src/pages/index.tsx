@@ -32,7 +32,7 @@ const HomePage = () => {
 
     return (
         <div className="Portfolio">
-            <CustomHead title={HomePageConfig.title} description={HomePageConfig.description} />
+            <CustomHead title={HomePageConfig.title} description={HomePageConfig.description} noIndex={false} />
             <main>
                 <Header
                     forwaredRef={headerRef}

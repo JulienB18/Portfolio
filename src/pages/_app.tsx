@@ -5,7 +5,7 @@ import { AppProps } from 'next/app';
 import Script from 'next/script';
 import { Provider } from 'react-redux';
 
-import Layout from 'layout/layout';
+import CustomLayout from 'layout/CustomLayout';
 import store from 'store';
 
 import 'styles/App.scss';
@@ -49,9 +49,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
                     }}
                 />
             )}
-            <Layout>
+            <CustomLayout>
                 <Component {...pageProps} />
-            </Layout>
+            </CustomLayout>
         </Provider>
     );
 };

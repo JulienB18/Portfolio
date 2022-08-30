@@ -1,14 +1,8 @@
 export const HomePageConfig = {
-    site_name: 'NextJS StarterKit',
-    title: 'NextJS StarterKit',
-    description: 'StarterKit Next JS TypeScript with Tailwind, Redux, Sass, Eslint, Stylelint and Prettier',
-    locale: 'fr',
-};
-
-export const ProjectPageConfig = {
-    site_name: 'Project Test',
-    title: 'Project Test',
-    description: 'Project Test',
+    site_name: 'Julien Boutet',
+    title: 'Julien Boutet',
+    description:
+        "Moi, c'est Julien Boutet, j'ai 23 ans, je suis développeur web freelance spécialisé en développement Front-End et mobile",
     locale: 'fr',
 };
 
