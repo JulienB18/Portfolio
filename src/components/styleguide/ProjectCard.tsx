@@ -22,7 +22,9 @@ const ProjectCard = (props: ProjectType) => {
                         {props.buttonText}
                     </a>
                 ) : (
-                    <Link href={props.link}>{props.buttonText}</Link>
+                    <Link href={props.link} scroll={true}>
+                        {props.buttonText}
+                    </Link>
                 )}
             </div>
         </article>

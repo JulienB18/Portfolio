@@ -35,6 +35,9 @@ body {
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
+    @-moz-document url-prefix() {
+        scroll-behavior: auto;
+    }
 }
 
 body {
