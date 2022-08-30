@@ -1,0 +1,47 @@
+.project-header {
+    padding: 16px;
+    width: 100%;
+
+    header {
+        width: 100%;
+        @include spaceBetween;
+        .logo-container {
+            z-index: 1;
+            width: 30%;
+            .logo {
+                width: 56px;
+                @include defaultLogo;
+            }
+        }
+    }
+
+    .button-container {
+        a {
+            padding: 10px 16px;
+            background-color: $title;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            font-family: 'Karla Medium', sans-serif;
+            font-size: $lg;
+        }
+    }
+
+    @screen sm {
+        header {
+            .logo-container {
+                .logo {
+                    width: 75px;
+                }
+            }
+        }
+    }
+
+    @screen md {
+        padding: 32px;
+    }
+
+    @screen xl {
+        padding: 32px 64px;
+    }
+}

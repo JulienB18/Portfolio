@@ -1,28 +1,29 @@
 import * as React from 'react';
 
-type ProjectCardProps = {
-    title: string;
-    type: string;
-    imgPath: string;
-    link: string;
-};
+import Link from 'next/link';
 
-const ProjectCard = (props: ProjectCardProps) => {
-    const onClick = () => {};
+import { ProjectType } from 'data/Projects';
+
+const ProjectCard = (props: ProjectType) => {
     return (
         <article
             className="Portfolio-projectcard"
             style={{
                 background: `url(${props.imgPath})`,
             }}
-            onClick={onClick}
         >
             <div className="Portfolio-projectcard-findout">
                 <div>
                     <h4>{props.title}</h4>
                     <p>{props.type}</p>
                 </div>
-                <button onClick={onClick}>En savoir plus</button>
+                {props.buttonText === 'Voir le site' ? (
+                    <a href={props.link} target="_blank" rel="noopener noreferrer">
+                        {props.buttonText}
+                    </a>
+                ) : (
+                    <Link href={props.link}>{props.buttonText}</Link>
+                )}
             </div>
         </article>
     );

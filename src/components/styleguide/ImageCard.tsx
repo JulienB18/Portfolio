@@ -1,18 +1,12 @@
 import * as React from 'react';
 
 type ProjectCardProps = {
+    imgAlt: string;
     imgPath: string;
 };
 
 const ImageCard = (props: ProjectCardProps) => {
-    return (
-        <div
-            className="Portfolio-imagecard"
-            style={{
-                background: `url(${props.imgPath})`,
-            }}
-        ></div>
-    );
+    return <img className="Portfolio-imagecard" src={props.imgPath} alt={props.imgAlt} />;
 };
 
 export default ImageCard;

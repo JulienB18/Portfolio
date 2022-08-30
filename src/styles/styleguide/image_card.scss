@@ -1,7 +1,5 @@
 .Portfolio-imagecard {
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+    object-fit: cover;
     border-radius: 16px;
     box-shadow: $boxShadowProject;
     max-width: 275px;

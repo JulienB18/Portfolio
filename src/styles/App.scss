@@ -1,6 +1,7 @@
 @import './partials/index.scss';
 @import './styleguide/index.scss';
-@import './content/index.scss';
+@import './HomePage/index.scss';
+@import './Project/index.scss';
 
 html,
 body {
@@ -9,8 +10,31 @@ body {
     position: relative;
 }
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: $text #f1f1f1;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: $text;
+    border-radius: 10px;
+    border: 3px solid #f1f1f1;
+}
+
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -42,6 +66,41 @@ body {
             .classic-max-width {
                 max-width: 1300px;
             }
+        }
+    }
+}
+
+.error-page {
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Segoe UI, Fira Sans, Avenir, Helvetica Neue, Lucida Grande,
+        sans-serif;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        display: inline-block;
+        margin: 0;
+        margin-right: 20px;
+        padding: 0 23px 0 0;
+        font-size: 24px;
+        font-weight: 500;
+        vertical-align: top;
+        line-height: 49px;
+    }
+    &-h2 {
+        display: inline-block;
+        text-align: left;
+        line-height: 49px;
+        height: 49px;
+        vertical-align: middle;
+        h2 {
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 49px;
+            margin: 0;
+            padding: 0;
         }
     }
 }

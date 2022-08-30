@@ -2,14 +2,14 @@ import * as React from 'react';
 
 type ButtonProps = {
     text: string;
-    buttonFunc: () => void;
+    link: string;
 };
 
 const Button = (props: ButtonProps) => {
     return (
-        <button className="Portfolio-button" type="button" onClick={props.buttonFunc}>
+        <a className="Portfolio-button" href={props.link} target="_blank" rel="noopener noreferrer">
             {props.text}
-        </button>
+        </a>
     );
 };
 

@@ -1,0 +1,92 @@
+.project-item {
+    width: 100%;
+    background: $white;
+    @include center;
+    &-content {
+        padding: 64px 16px;
+        @include fullCenter;
+        align-items: flex-start;
+        &-links {
+            order: 2;
+            margin-right: 25%;
+            margin-top: 64px;
+            width: 100%;
+            ul {
+                font-family: 'Karla Regular', sans-serif;
+                width: 100%;
+                color: $text;
+                padding-top: 24px;
+                li {
+                    width: 100%;
+                    padding: 8px 0;
+                }
+            }
+        }
+
+        &-explanation {
+            order: 1;
+            &-graytitle {
+                margin-bottom: 24px;
+                text-align: center;
+            }
+            h4 {
+                text-align: center;
+                font-family: 'Space Grotesk Bold', sans-serif;
+                color: $title;
+                font-size: $xl4;
+            }
+            &-description {
+                margin-top: 16px;
+                text-align: justify;
+                color: $text;
+                font-family: 'Karla Regular', sans-serif;
+            }
+
+            &-date {
+                color: $text;
+                font-family: 'Karla Regular', sans-serif;
+                font-style: italic;
+            }
+            &-image {
+                width: 100%;
+                margin-top: 32px;
+                @include center;
+            }
+        }
+    }
+
+    @screen md {
+        &-content {
+            padding: 96px 32px;
+            @include flexStart;
+            align-items: flex-start;
+            flex-direction: row;
+            &-links {
+                order: 1;
+                margin-top: unset;
+            }
+            &-explanation {
+                order: 2;
+            }
+        }
+    }
+
+    @screen lg {
+        &-content {
+            &-explanation {
+                &-graytitle {
+                    text-align: left;
+                }
+                h4 {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    @screen xl {
+        &-content {
+            padding: 96px 64px;
+        }
+    }
+}

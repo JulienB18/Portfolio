@@ -8,6 +8,9 @@ module.exports = withBundleAnalyzer({
   trailingSlash: true,
   basePath: '',
   reactStrictMode: true,
+  experimental: {
+    scrollRestoration: true,
+  },
   webpack: (config, options) => {
     config.plugins.push(new StylelintPlugin());
     return config;

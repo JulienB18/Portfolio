@@ -1,0 +1,22 @@
+.Portfolio-backtoheader {
+    z-index: 999;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    color: $text;
+    border-radius: 50%;
+    text-align: center;
+    font-family: 'Space Grotesk Bold', sans-serif;
+    font-size: 24px;
+    width: 48px;
+    height: 48px;
+    background: $white;
+    box-shadow: 11px 11px 20px 0 rgb(19 15 73 / 5%);
+
+    @screen lg {
+        width: 64px;
+        height: 64px;
+        bottom: 32px;
+        right: 32px;
+    }
+}

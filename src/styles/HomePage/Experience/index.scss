@@ -1,0 +1,66 @@
+.experience {
+    width: 100%;
+    margin-top: 24px;
+    background: #e9f9ff;
+    @include center;
+
+    &-content {
+        padding: 100px 16px;
+        @include fullCenter;
+        gap: 64px;
+        &-column {
+            max-width: 560px;
+            width: 100%;
+            &-title {
+                text-align: center;
+                font-family: 'Space Grotesk Bold', sans-serif;
+                color: $title;
+                font-size: $xl4;
+                margin-bottom: 64px;
+            }
+            &-elem {
+                margin-top: 24px;
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    @screen sm {
+        &-content {
+            &-column {
+                &-title {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    @screen md {
+        &-content {
+            padding: 100px 32px;
+        }
+    }
+
+    @screen lg {
+        margin-top: 0;
+        &-content {
+            @include spaceBetween;
+            flex-direction: row;
+            gap: 32px;
+            width: 100%;
+            &-column {
+                max-width: unset;
+                width: unset;
+                width: 50%;
+            }
+        }
+    }
+
+    @screen xl {
+        &-content {
+            padding: 100px 64px;
+        }
+    }
+}

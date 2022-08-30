@@ -3,6 +3,7 @@ import { ActionType } from 'type';
 export type GlobalState = {
     clicks: number;
     mobileMenu: boolean;
+    skillRef?: React.MutableRefObject<null>;
 };
 
 const initialState: GlobalState = {
@@ -29,6 +30,10 @@ const globalReducer = (
 
     if (action.type === 'SetMobileMenu') {
         return { ...state, mobileMenu: !state.mobileMenu };
+    }
+
+    if (action.type === 'SetSkillRef') {
+        return { ...state, skillRef: action.payload };
     }
     return state;
 };

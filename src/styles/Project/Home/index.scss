@@ -1,0 +1,55 @@
+.project-home {
+    padding: 0 16px 96px 16px;
+    margin-top: 32px;
+    width: 100%;
+    @include fullCenter;
+    gap: 32px;
+    &-content {
+        width: 100%;
+        text-align: center;
+        &-sectiontitle {
+            h2 {
+                font-size: $xl5;
+            }
+        }
+        p {
+            margin-top: 32px;
+            text-align: justify;
+            color: $text;
+            font-family: 'Karla Regular', sans-serif;
+        }
+    }
+
+    &-image {
+        @include center;
+        margin-top: 32px;
+        width: 100%;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    @screen md {
+        padding: 0 32px 96px 32px;
+    }
+
+    @screen lg {
+        @include spaceBetween;
+        margin-top: unset;
+        flex-direction: row;
+        &-content {
+            text-align: left;
+            width: 50%;
+        }
+
+        &-image {
+            margin-top: unset;
+            width: 50%;
+        }
+    }
+
+    @screen xl {
+        padding: 0 64px 96px 64px;
+    }
+}

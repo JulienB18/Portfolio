@@ -14,7 +14,6 @@
     &-findout {
         border-radius: 8px;
         font-family: 'Space Grotesk Bold', sans-serif;
-        font-weight: bold;
         text-align: center;
         font-size: $xl2;
         color: $title;
@@ -32,14 +31,13 @@
             font-size: $lg;
             line-height: 2rem;
         }
-        button {
+        a {
             padding: 10px 16px;
             background-color: $primary;
             color: white;
             border-radius: 5px;
             text-align: center;
             font-family: 'Karla Medium', sans-serif;
-            font-weight: 500;
             font-size: $lg;
         }
     }

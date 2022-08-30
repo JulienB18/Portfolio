@@ -1,11 +1,11 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-import { AppConfig } from 'utils/AppConfig';
+import { HomePageConfig } from 'data/AppConfig';
 
 class MyDocument extends Document {
     render() {
         return (
-            <Html lang={AppConfig.locale}>
+            <Html lang={HomePageConfig.locale}>
                 <Head />
                 <body>
                     <Main />
