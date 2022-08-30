@@ -4,6 +4,7 @@
     width: 100%;
     padding: 0 16px;
     margin-bottom: 96px;
+    margin-top: 16px;
     &-title {
         z-index: 2;
         h1 {
@@ -101,7 +102,7 @@
         }
     }
 
-    @media screen and (min-width: 640px) {
+    @media screen and (min-width: $breakpoint_sm) {
         &-title {
             &-buttons {
                 @include spaceBetween;
@@ -123,12 +124,13 @@
         }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $breakpoint_md) {
         padding: 0 32px;
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $breakpoint_lg) {
         @include spaceBetween;
+        margin-top: 0;
         &-title {
             width: 60%;
             h1 {
@@ -161,7 +163,7 @@
         }
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $breakpoint_xl) {
         padding: 0 64px;
         align-items: unset;
         &-title {

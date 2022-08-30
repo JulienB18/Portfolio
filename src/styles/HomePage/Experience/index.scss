@@ -27,7 +27,7 @@
         }
     }
 
-    @media screen and (min-width: 640px) {
+    @media screen and (min-width: $breakpoint_sm) {
         &-content {
             &-column {
                 &-title {
@@ -37,13 +37,13 @@
         }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $breakpoint_md) {
         &-content {
             padding: 100px 32px;
         }
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $breakpoint_lg) {
         margin-top: 0;
         &-content {
             @include spaceBetween;
@@ -58,7 +58,7 @@
         }
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $breakpoint_xl) {
         &-content {
             padding: 100px 64px;
         }

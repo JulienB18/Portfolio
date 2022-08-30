@@ -7,11 +7,11 @@
         font-size: $xl4;
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $breakpoint_lg) {
         font-size: $xl5;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $breakpoint_xl) {
         font-size: $xl6;
     }
 }

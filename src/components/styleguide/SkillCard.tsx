@@ -9,7 +9,7 @@ type SkillCardProps = {
 
 const SkillCard = (props: SkillCardProps) => {
     return (
-        <article className="Portfolio-skillcard">
+        <article className="Portfolio-skillcard" data-aos="zoom-in">
             <div className="Portfolio-skillcard-title">
                 <div className="Portfolio-skillcard-title-icon">
                     <div

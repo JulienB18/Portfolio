@@ -17,10 +17,10 @@ const Skills = (props: SkillsProps) => {
     return (
         <div ref={props.forwaredRef} className="classic-max-width">
             <section className="skills">
-                <div className="skills-title">
+                <div className="skills-title" data-aos="fade-down">
                     <GraySectionTitle title="Aptitudes" />
                 </div>
-                <div className="skills-title">
+                <div className="skills-title" data-aos="fade-down">
                     <SectionTitle title="🔍 Mes compétences" />
                 </div>
                 <div className="skills-container">

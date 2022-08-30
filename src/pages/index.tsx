@@ -1,4 +1,6 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
+
+import AOS from 'aos';
 
 import Contact from 'components/HomePage/Contact';
 import Experience from 'components/HomePage/Experience';
@@ -19,6 +21,14 @@ const HomePage = () => {
     const projectRef = useRef(null);
     const presentationRef = useRef(null);
     const contactRef = useRef(null);
+
+    useEffect(() => {
+        AOS.init({
+            duration: 750,
+            once: true,
+            delay: 50,
+        });
+    }, []);
 
     return (
         <div className="Portfolio">

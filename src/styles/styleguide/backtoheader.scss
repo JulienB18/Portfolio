@@ -13,7 +13,7 @@
     background: $white;
     box-shadow: 11px 11px 20px 0 rgb(19 15 73 / 5%);
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $breakpoint_lg) {
         width: 64px;
         height: 64px;
         bottom: 32px;

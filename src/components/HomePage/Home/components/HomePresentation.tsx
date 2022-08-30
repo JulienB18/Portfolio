@@ -7,7 +7,7 @@ import DotGrid from 'components/StyleGuide/svg/DotGrid';
 const HomePresentation = () => {
     const router = useRouter();
     return (
-        <div className="home-presentation">
+        <div className="home-presentation" data-aos="fade-left" data-aos-duration="1000">
             <div className="home-presentation-dotgrid home-presentation-dotgrid_top">
                 <DotGrid />
             </div>

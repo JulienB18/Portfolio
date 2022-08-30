@@ -17,7 +17,7 @@ const Projects = (props: ProjectsProps) => {
     return (
         <section ref={props.forwaredRef} className="projects">
             <aside className="projects-aside">
-                <div className="projects-aside-rectangle"></div>
+                <div className="projects-aside-rectangle" data-aos="fade-left" data-aos-duration="1000"></div>
                 <div className="projects-aside-dot">
                     <DotGrid />
                 </div>
@@ -25,10 +25,10 @@ const Projects = (props: ProjectsProps) => {
             <div className="projects-container">
                 <div className="classic-max-width">
                     <div className="projects-content">
-                        <div className="projects-content-title">
+                        <div className="projects-content-title" data-aos="fade-right">
                             <GraySectionTitle title="Portfolio" />
                         </div>
-                        <div className="projects-content-title">
+                        <div className="projects-content-title" data-aos="fade-right">
                             <SectionTitle title="🖌️ Mes différents projets" />
                         </div>
                         <div className="projects-content-list">

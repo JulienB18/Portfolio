@@ -31,13 +31,13 @@
         }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $breakpoint_md) {
         &-content {
             padding: 64px 32px;
         }
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $breakpoint_lg) {
         &-container {
             &-cards {
                 @include spaceBetween;
@@ -46,7 +46,7 @@
         }
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $breakpoint_xl) {
         &-content {
             padding: 64px 64px;
         }

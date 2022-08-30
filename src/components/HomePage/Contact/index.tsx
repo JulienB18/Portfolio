@@ -13,7 +13,7 @@ const Contact = (props: ContactProps) => {
         <section ref={props.forwaredRef} className="contact">
             <div className="classic-max-width">
                 <div className="contact-content">
-                    <div className="contact-container">
+                    <div className="contact-container" data-aos="flip-up">
                         <div className="contact-container-title">
                             <GraySectionTitle title="Contact" />
                         </div>

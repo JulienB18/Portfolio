@@ -6,7 +6,7 @@ import { cvLink } from 'data/AppConfig';
 
 const HomeTitle = () => {
     return (
-        <div className="home-title">
+        <div className="home-title" data-aos="fade-right" data-aos-duration="1000">
             <h1>
                 👋Bonjour, je suis <span>Julien</span>, développeur web et mobile
             </h1>

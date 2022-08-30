@@ -8,7 +8,7 @@ const Experience = () => {
         <section className="experience">
             <div className="classic-max-width">
                 <div className="experience-content">
-                    <div className="experience-content-column">
+                    <div className="experience-content-column" data-aos="fade-right">
                         <p className="experience-content-column-title">📚 Education</p>
                         {schoolExperience?.map((x: ExperienceType) => {
                             return (
@@ -18,7 +18,7 @@ const Experience = () => {
                             );
                         })}
                     </div>
-                    <div className="experience-content-column">
+                    <div className="experience-content-column" data-aos="fade-left">
                         <p className="experience-content-column-title">💼 Experience</p>
                         {proExperience?.map((x: ExperienceType) => {
                             return (

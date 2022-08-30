@@ -31,7 +31,12 @@ const Presentation = (props: PresentationProps) => {
     return (
         <section ref={props.forwaredRef} className="presentation">
             <aside className="presentation-aside">
-                <div className="presentation-aside-rectangle" style={{ height: `${size + 64}px` }}></div>
+                <div
+                    className="presentation-aside-rectangle"
+                    style={{ height: `${size + 64}px` }}
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                ></div>
                 <div className="presentation-aside-dot">
                     <DotGrid />
                 </div>
@@ -39,14 +44,14 @@ const Presentation = (props: PresentationProps) => {
             <div ref={ref} className="presentation-container">
                 <div className="classic-max-width">
                     <div className="presentation-content">
-                        <div className="presentation-content-title">
+                        <div className="presentation-content-title" data-aos="fade-right">
                             <GraySectionTitle title="Faire ma connaissance" />
                         </div>
-                        <div className="presentation-content-title">
+                        <div className="presentation-content-title" data-aos="fade-right">
                             <SectionTitle title="👋 Voici qui, Je suis !" />
                         </div>
                         <div className="presentation-content-description">
-                            <p>
+                            <p data-aos="fade-right">
                                 Passionné depuis plusieurs années par le développement, je pratique ma passion depuis
                                 plus de 5 ans et professionnellement depuis 3 ans. Ma spécialité est le développement
                                 Front End, en revanche étant de nature curieux, je possède des compétences des métiers
@@ -55,7 +60,7 @@ const Presentation = (props: PresentationProps) => {
                                 l’utilisation de l’outil par les futurs utilisateurs ainsi que la prise en main par les
                                 développeurs qui m’accompagne ou qui reprendrait un de mes projets.
                             </p>
-                            <p>
+                            <p data-aos="fade-left">
                                 En-dehors de mon métier, je suis toujours en quête de savoir et d’innovation, je cherche
                                 toujours à apprendre ou faire mieux. Dans la vie, je suis passionné par l’esport depuis
                                 presque 10 ans et le sport en général depuis tout jeune. L’audiovisuel, notamment les
@@ -64,7 +69,7 @@ const Presentation = (props: PresentationProps) => {
                                 jeune, j’apprends à utiliser les outils qui m’entourent de façon autodidacte.
                             </p>
                         </div>
-                        <div className="presentation-content-images">
+                        <div className="presentation-content-images" data-aos="fade-up">
                             <ImageCard
                                 imgAlt={'Julien Boutet'}
                                 imgPath={`.${`${router.basePath}/assets/images/me/Ju1.png`}`}

@@ -40,10 +40,10 @@ const Header = (props: IMenuProps & IMenuState & IHeaderDispatchProps) => {
         <div ref={props.forwaredRef} className="classic-max-width">
             <div className={`header-container${container}`}>
                 <header>
-                    <div className="logo-container">
+                    <div className="logo-container" data-aos="fade-down" data-aos-duration="1000">
                         <Logo />
                     </div>
-                    <div className="nav-container">
+                    <div className="nav-container" data-aos="fade-down" data-aos-duration="1000">
                         <nav>
                             <ul>
                                 <li onClick={() => scrollIntoView(props.skillRef)}>Compétences</li>
@@ -61,7 +61,7 @@ const Header = (props: IMenuProps & IMenuState & IHeaderDispatchProps) => {
                             </a>
                         </div>
                     </div>
-                    <div className="nav-burger">
+                    <div className="nav-burger" data-aos="fade-down" data-aos-duration="1000">
                         <div
                             className={`nav-burger-container nav-burger-container${isOpen}`}
                             onClick={() => props.setMobileMenu()}

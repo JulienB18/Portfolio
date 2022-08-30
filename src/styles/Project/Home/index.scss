@@ -30,11 +30,11 @@
         }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $breakpoint_md) {
         padding: 0 32px 96px 32px;
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $breakpoint_lg) {
         @include spaceBetween;
         margin-top: unset;
         flex-direction: row;
@@ -49,7 +49,7 @@
         }
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $breakpoint_xl) {
         padding: 0 64px 96px 64px;
     }
 }

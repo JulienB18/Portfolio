@@ -11,6 +11,7 @@ const ProjectCard = (props: ProjectType) => {
             style={{
                 background: `url(${props.imgPath})`,
             }}
+            data-aos="zoom-in"
         >
             <div className="Portfolio-projectcard-findout">
                 <div>

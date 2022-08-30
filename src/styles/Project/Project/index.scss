@@ -55,7 +55,7 @@
         }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $breakpoint_md) {
         &-content {
             padding: 96px 32px;
             @include flexStart;
@@ -71,7 +71,7 @@
         }
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $breakpoint_lg) {
         &-content {
             &-explanation {
                 &-graytitle {
@@ -84,7 +84,7 @@
         }
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $breakpoint_xl) {
         &-content {
             padding: 96px 64px;
         }
