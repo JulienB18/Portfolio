@@ -35,6 +35,10 @@ const CustomHead = (props: ICustomHeadProps) => {
                 />
                 <link rel="icon" type="image/x-icon" href={`./favicon.ico`} key="favicon" />
                 <meta name="author" content="Julien Boutet" />
+                <meta
+                    name="twitter:image:src"
+                    content="https://julienboutet.fr/assets/icons/apple-touch-icon.png"
+                ></meta>
             </Head>
             <NextSeo
                 title={props.title}
@@ -50,8 +54,8 @@ const CustomHead = (props: ICustomHeadProps) => {
                     images: [
                         {
                             url: 'https://julienboutet.fr/assets/icons/apple-touch-icon.png',
-                            width: 32,
-                            height: 32,
+                            width: 180,
+                            height: 180,
                             alt: 'Julien Boutet',
                         },
                     ],

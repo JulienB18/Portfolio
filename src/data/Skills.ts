@@ -24,7 +24,7 @@ export const tools = [
     'NPM / Composer',
     'Git',
     'Prettier / Eslint',
-    'Wordpress',
+    'WordPress',
     'Docker',
     'Suite Adobe',
     'Figma',

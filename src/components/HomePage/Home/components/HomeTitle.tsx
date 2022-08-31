@@ -15,7 +15,7 @@ const HomeTitle = () => {
                 mon métier et la découverte des différents secteurs d’activités de mes clients.
             </p>
             <p className="home-title-description">
-                Du développement d’applications web ou mobile, au développement de site e-commerce ou wordpress, je
+                Du développement d’applications web ou mobile, au développement de site e-commerce ou WordPress, je
                 m’adapte à tout type de projet. N’hésitez pas à me contacter !
             </p>
             <div className="home-title-buttons">
