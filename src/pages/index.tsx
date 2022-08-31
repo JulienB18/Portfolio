@@ -13,7 +13,7 @@ import Projects from 'components/HomePage/Projects';
 import Skills from 'components/HomePage/Skills';
 import BackToHeader from 'components/StyleGuide/BackToHeader';
 import { HomePageConfig } from 'data/AppConfig';
-import CustomHead from 'layout/Head';
+import CustomHead from 'layout/CustomHead';
 
 const HomePage = () => {
     const headerRef = useRef(null);

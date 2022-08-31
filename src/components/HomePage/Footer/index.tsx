@@ -5,9 +5,13 @@ import LinkedInLogo from 'components/StyleGuide/svg/LinkedInLogo';
 import Logo from 'components/StyleGuide/svg/Logo';
 import { githubLink, linkedInLink } from 'data/AppConfig';
 
-const Footer = () => {
+type FooterProps = {
+    isWhite?: boolean;
+};
+
+const Footer = (props: FooterProps) => {
     return (
-        <footer className="footer">
+        <footer className="footer" style={{ background: props.isWhite ? 'white' : '' }}>
             <div className="classic-max-width">
                 <div className="footer-content">
                     <Logo />

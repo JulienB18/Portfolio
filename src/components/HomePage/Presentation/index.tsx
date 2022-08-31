@@ -58,7 +58,7 @@ const Presentation = (props: PresentationProps) => {
                                 entourant ma spécialité. Cette qualité me permet d’avoir une vision globale sur chaque
                                 projet auquel je touche et ainsi ne pas simplement penser à mon travail, mais à
                                 l’utilisation de l’outil par les futurs utilisateurs ainsi que la prise en main par les
-                                développeurs qui m’accompagne ou qui reprendrait un de mes projets.
+                                développeurs qui m’accompagnent ou qui reprendraient un de mes projets.
                             </p>
                             <p data-aos="fade-left">
                                 En-dehors de mon métier, je suis toujours en quête de savoir et d’innovation, je cherche

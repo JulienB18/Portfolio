@@ -80,7 +80,7 @@ const gbot: ProjectDetailsType = {
     date: '2020',
     description: `Dans le cadre de mes études, en 4ème année, j'ai participé à un événement dans mon école nommé Cercle de projet, l'objectif est de réaliser un projet en moins d'une semaine sans connaître le sujet en amont ni les potentielles technologies. Cette année, nous devions réaliser une mascotte 3D pour notre école accompagné de prints, d'un site web, de réalité augmenté et d'un jeu pour mettre en avant la mascotte. Dans ce projet, j'ai dû gérer l'équipe projet et développé le site web.`,
     descriptionImg: '/assets/images/project/gbot/ContentGbot.png',
-    linkArray: [{ link: 'https://julienboutet.fr/gbot-4/', title: 'Site du projet' }],
+    linkArray: [{ link: 'https://julienboutet.fr/old/gbot-4/', title: 'Site du projet' }],
 };
 
 export const projectsDetailsList = [dinbbl, kcorp, cja, fmb, gbot];

@@ -7,6 +7,7 @@ module.exports = withBundleAnalyzer({
   poweredByHeader: false,
   trailingSlash: true,
   basePath: '',
+  assetPrefix: '.',
   reactStrictMode: true,
   experimental: {
     scrollRestoration: true,

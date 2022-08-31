@@ -58,7 +58,7 @@ const blueprint: ProjectType = {
     title: 'BluePrint',
     type: 'Site web',
     imgPath: '/assets/images/projects/Blueprint.png',
-    link: 'https://julienboutet.fr/blueprint/',
+    link: 'https://julienboutet.fr/old/blueprint/',
     buttonText: 'Voir le site',
 };
 
@@ -66,7 +66,7 @@ const oldPortfolio: ProjectType = {
     title: 'Ancien Portfolio',
     type: 'Site web',
     imgPath: '/assets/images/projects/OldPortfolio.png',
-    link: 'https://julienboutet.fr/portfolioV2/',
+    link: 'https://julienboutet.fr/old/portfolio/',
     buttonText: 'Voir le site',
 };
 

@@ -16,11 +16,24 @@ const CustomHead = (props: ICustomHeadProps) => {
             <Head>
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta charSet="UTF-8" key="charset" />
+                <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"></meta>
                 <meta name="viewport" content="width=device-width,initial-scale=1" key="viewport" />
-                <link rel="apple-touch-icon" href={`/assets/icons/apple-touch-icon.png`} key="apple" />
-                <link rel="icon" type="image/png" sizes="32x32" href={`/assets/icons/favicon-32x32.png`} key="icon32" />
-                <link rel="icon" type="image/png" sizes="16x16" href={`/assets/icons/favicon-16x16.png`} key="icon16" />
-                <link rel="icon" type="image/x-icon" href={`/favicon.ico`} key="favicon" />
+                <link rel="apple-touch-icon" href={`./assets/icons/apple-touch-icon.png`} key="apple" />
+                <link
+                    rel="icon"
+                    type="image/png"
+                    sizes="32x32"
+                    href={`./assets/icons/favicon-32x32.png`}
+                    key="icon32"
+                />
+                <link
+                    rel="icon"
+                    type="image/png"
+                    sizes="16x16"
+                    href={`./assets/icons/favicon-16x16.png`}
+                    key="icon16"
+                />
+                <link rel="icon" type="image/x-icon" href={`./favicon.ico`} key="favicon" />
                 <meta name="author" content="Julien Boutet" />
             </Head>
             <NextSeo
@@ -36,7 +49,7 @@ const CustomHead = (props: ICustomHeadProps) => {
                     site_name: HomePageConfig.site_name,
                     images: [
                         {
-                            url: 'https://julienboutet.fr/assets/icons/favicon-32x32.png',
+                            url: 'https://julienboutet.fr/assets/icons/apple-touch-icon.png',
                             width: 32,
                             height: 32,
                             alt: 'Julien Boutet',

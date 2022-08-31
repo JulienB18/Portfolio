@@ -13,7 +13,7 @@ const Contact = (props: ContactProps) => {
         <section ref={props.forwaredRef} className="contact">
             <div className="classic-max-width">
                 <div className="contact-content">
-                    <div className="contact-container" data-aos="flip-up">
+                    <div className="contact-container" data-aos="zoom-in">
                         <div className="contact-container-title">
                             <GraySectionTitle title="Contact" />
                         </div>
@@ -21,18 +21,24 @@ const Contact = (props: ContactProps) => {
                             <SectionTitle title="📞 Envie de me contacter ?" />
                         </div>
                         <div className="contact-container-cards">
-                            <a href="tel:+33750604130" rel="noopener" className="contact-container-cards-elem">
+                            <a
+                                href="tel:+33750604130"
+                                rel="noopener"
+                                className="contact-container-cards-elem"
+                                data-aos="zoom-in"
+                            >
                                 <ContactCard emoji="📱" text="07 50 60 41 30" />
                             </a>
                             <a
                                 href="mailto:contact@julienboutet.fr"
                                 rel="noopener"
                                 className="contact-container-cards-elem"
+                                data-aos="zoom-in"
                             >
                                 <ContactCard emoji="📧" text="contact@julienboutet.fr" />
                             </a>
 
-                            <div className="contact-container-cards-elem">
+                            <div className="contact-container-cards-elem" data-aos="zoom-in">
                                 <ContactCard emoji="📍" text="Remote / Bourges" />
                             </div>
                         </div>

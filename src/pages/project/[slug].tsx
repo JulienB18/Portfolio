@@ -5,13 +5,14 @@ import { useRouter } from 'next/router';
 
 import ErrorPage from 'components/ErrorPage';
 import Contact from 'components/HomePage/Contact';
+import Footer from 'components/HomePage/Footer';
 import Header from 'components/Project/Header';
 import Home from 'components/Project/Home';
 import Project from 'components/Project/Project';
 import BackToHeader from 'components/StyleGuide/BackToHeader';
 import { HomePageConfig } from 'data/AppConfig';
 import { projectsDetailsList } from 'data/ProjectDetails';
-import CustomHead from 'layout/Head';
+import CustomHead from 'layout/CustomHead';
 
 const ProjectPage = () => {
     useEffect(() => {
@@ -44,6 +45,7 @@ const ProjectPage = () => {
                 <Home projectDetails={result} />
                 <Project projectDetails={result} />
                 <Contact />
+                <Footer isWhite={true} />
                 <BackToHeader forwaredRef={headerRef} />
             </main>
         </div>
