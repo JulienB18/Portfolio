@@ -23,12 +23,12 @@ export const backEnd = [
 export const tools = [
     'NPM / Composer',
     'Git',
-    'Prettier / Eslint',
-    'WordPress',
     'Docker',
+    'Prettier / Eslint',
+    'Shopify',
+    'WordPress',
     'Suite Adobe',
     'Figma',
-    'Postman',
 ];
 
 export const others = [
